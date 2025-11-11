@@ -100,8 +100,11 @@ body {
   text-align: left;
 }
 
+
 ul, ol {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -133,15 +136,15 @@ h3, h4 {
 p {
   font-size: 0.875em;
   line-height: 1.125;
-  color: #e2e3ed;
+  
 }
 
 img {
-
+  width: 100%;
 }
 
 figure {
-
+  margin: 0;
 }
 
 address {
@@ -154,6 +157,7 @@ address {
 }
 
    /*--------Base Header-Footer Styles-------*/
+
 header {
   display:flex;
   justify-content: center;
@@ -167,6 +171,10 @@ header .content-wrapper {
   align-items: center;
   flex-flow: row wrap;
   margin: 0;
+}
+
+header figure {
+  width: 60%;
 }
 
 .header-divider {
@@ -219,7 +227,6 @@ footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.3125em;
 }
 
 footer .copyright {
@@ -231,9 +238,13 @@ footer .copyright {
 /* Hero Area */
 
 .hero-area {
+  background: url(../unplugged-design-docs/unplugged-retreat.jpg), #333;
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
   display:flex;
   justify-content: center;
-  height: 500px;
+  
 }
 
 .hero-area h1 {
@@ -241,6 +252,7 @@ footer .copyright {
   font-family: 'Poppins', Helvetica, Arial, sans-serif;
   font-weight: 500;
   line-height: 1.2;
+ 
 }
 
 /* Aside */
@@ -289,6 +301,9 @@ input[type=button] {
 /* Features */
 
 .features {
+  background: url(../unplugged-design-docs/unplugged-retreat-features.jpg);
+  background-size: cover;
+  background-position: center;
   display:flex;
   justify-content: center;
 }
@@ -324,7 +339,8 @@ input[type=button] {
   display:flex;
   justify-content: center;
   background-color: #2a423a;
-  color: #e2e3ed;
+  
+  
 }
 
 .reviews h2 {
@@ -362,7 +378,6 @@ input[type=button] {
   display:flex;
   justify-content: center;
   background-color: #527158;
-  color:#e2e3ed;
 }
 
 .faqs .content-wrapper {
@@ -374,7 +389,7 @@ input[type=button] {
 }
 
 .faqs h2  {
-  margin: 40px;
+  margin-bottom: 40px;
   line-height: 1;
 }
 
@@ -681,6 +696,9 @@ input[type=button] {
    padding: 15px 0;
   }
   
+  header figure {
+    width: 30%;
+  }
   h2 {
     font-size: 2.25em;
    }
@@ -699,6 +717,7 @@ input[type=button] {
  .hero-area h1 {
   width: 80%;
   font-size: 3.75em;
+  
   }
 
  /*Aside*/
@@ -716,33 +735,53 @@ aside .content-wrapper .form {
   font-size: 1.125em;
  }
 
-/*Features*/
+ /*Features*/
 
-.features h2 {
+ .features h2 {
   width: 90%;
-}
+ }
 
-.features article {
+ .features article {
   flex-basis: 33%;
-}
+ }
 
-/*Reviews*/
+ /*Reviews*/
 
-.reviews article div {
+ .reviews h2 {
+    padding-bottom: 50px;
+  }
+
+ .reviews article div {
   width: 41%;
-}
+ }
 
-/*-------About Page-------*/
+ footer h4 {
+    font-size: 1.875em;
+  }
 
-.mission h2,
-.contact-section .content-wrapper h2 {
+ /*-------About Page-------*/
+
+ .mission h2,
+ .contact-section .content-wrapper h2 {
   width: 95%;
-}
-/*-----FAQs PAge-----*/
+  font-size: 3em;
+ }
+ 
+ .contact-content h4 {
+    font-size: 1.875em;
+  }
 
-.faqs h2 {
+ /*-----FAQs PAge-----*/
+
+ .faqs h2 {
   width: 100%;
-}
+  font-size: 3em;
+ }
+ .faqs h4, .faqs p {
+  font-size: 1.125em;
+  line-height: 1;
+ }
+
 }
 
 /* ==========================================================================
