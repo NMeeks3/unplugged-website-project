@@ -355,6 +355,22 @@ input[type=button] {
 
 /*-------Mobile Styles About Page-------*/
 
+.map figure {
+  width: 100%;
+  height: 0;
+  padding-bottom: 125%;
+  overflow: hidden;
+  position: relative;
+}
+
+.map iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .mission {
   display:flex;
   justify-content: center;
@@ -598,7 +614,8 @@ input[type=button] {
     width: 85%;
  } 
 
- .reviews article div {
+ .reviews article div,
+ .reviews article figure {
   width: 49%;
  }
 
