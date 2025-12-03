@@ -96,10 +96,11 @@ html {
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
-  color: #e2e3ed;
+  /* color: #e2e3ed; */
+  /* *** Used a lighter color for text for better color contrast */
+  color: #E9EAF1;
   text-align: left;
 }
-
 
 ul, ol {
   list-style-type: none;
@@ -112,21 +113,17 @@ a {
   text-decoration: none;
 }
 
-h1 {
-  font-size: 2.25rem;
-  line-height: 2.6875rem;
-  font-weight: 500;
-  color: #e2e3ed;
-}
-
-h2 {
+/* *** Added the h1 for the mission page */
+.mission h1, h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
   font-weight: 500;
+  margin: 0;
   color: #e2e3ed;
 }
 
-h3, h4 {
+/* *** Added h2 for homepage form and faq page */
+.form-description h2, .faq h2, h3, h4 {
   font-family: 'Poppins', sans-serif;
   margin: 20px 0;
   font-size: 1.125em;
@@ -135,8 +132,7 @@ h3, h4 {
 
 p {
   font-size: 0.875em;
-  line-height: 1.125;
-  
+  line-height: 1.285;
 }
 
 img {
@@ -197,6 +193,10 @@ header nav ul {
   justify-content: space-around;
 }
 
+header nav ul li {
+  font-size: 1.125em;
+}
+
 footer {
   display: flex;
   flex-direction: column;
@@ -233,7 +233,6 @@ footer .social-icons p {
   height: 45px;
 }
 
-
 footer .social-icons p i {
   font-size: 1.3125em;
 }
@@ -253,15 +252,13 @@ footer .copyright {
   min-height: 500px;
   display:flex;
   justify-content: center;
-  
 }
 
 .hero-area h1 {
   font-size: 2.25em;
   font-family: 'Poppins', Helvetica, Arial, sans-serif;
   font-weight: 500;
-  line-height: 1.2;
- 
+  line-height: 1.2; 
 }
 
 /* Aside */
@@ -270,7 +267,6 @@ aside {
   display:flex;
   justify-content: center;
   background-color: #527158;
-  color: #e2e3ed;;
 }
 
 aside .form {
@@ -283,6 +279,8 @@ input[type=text] {
   color: #2a423a;
   font-style: italic;
   padding: 1em;
+  /* *** Create space between label and input */
+  margin-top: 10px;
 }
  
 input[type=button] {
@@ -386,15 +384,15 @@ input[type=button] {
 .contact-content p {
   margin: 0;
 }
-/*-------Mobile Styles FAQs Page-------*/
+/*-------Mobile Styles FAQ Page-------*/
 
-.faqs {
+.faq {
   display:flex;
   justify-content: center;
   background-color: #527158;
 }
 
-.faqs .content-wrapper {
+.faq .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -402,16 +400,19 @@ input[type=button] {
   margin: 50px 0 0 0;
 }
 
-.faqs h2  {
+/* *** Added h1 for the faq page */
+/* *** Remove .faq h2 since these styles do not apply to the current h2 in the faq page */
+.faq h1  {
   margin-bottom: 40px;
   line-height: 1;
 }
 
-.faqs-content {
+.faq-content {
   margin-bottom: 50px;
 }
 
-.faqs-content h4 {
+/* *** Added h2 for the faq page */
+.faq-content h2, .faq-content h4 {
   line-height: 1.333;
 }
 
@@ -512,12 +513,15 @@ input[type=button] {
   margin: 100px 0;
  }
 
- h2 {
+  /* *** Added the h1 for the mission and faq pages */
+  .mission h1,
+  .faq h1, h2 {
   font-size: 2.25em;
   line-height: 1.333;
  }
 
- h3 {
+ /* *** Added h2 for homepage form */
+  .form-description h2, h3 {
   font-size: 1.5em;
   line-height: 1.25;
   }
@@ -566,7 +570,8 @@ input[type=button] {
     margin-bottom: 0;
   }
 
-  footer h4 {
+  /* *** Added h3 for the footer */
+  footer h3, footer h4 {
     font-size: 1.5em;
     margin-bottom: 40px;
   }
@@ -603,6 +608,8 @@ input[type=button] {
   display: flex;
   justify-content: space-between;
   align-content: flex-start;
+  /* *** align the form and form description at their centers */
+  align-items: center;
  }
 
  aside .content-wrapper .form-description, 
@@ -621,7 +628,6 @@ input[type=button] {
   display: flex;
   align-items: center;
   flex-flow: column wrap;
-
   flex-basis: 50%;
  }
 
@@ -669,7 +675,7 @@ input[type=button] {
 
   .map figure {
   padding-bottom: 45%;
-}
+ }
 
  .contact-section .content-wrapper h2 {
   width: 80%;
@@ -681,26 +687,28 @@ input[type=button] {
   align-items: flex-start;
  }
 
- .contact-content h4 {
+ /* *** Added h3 for the about page */
+ .contact-content h3, .contact-content h4 {
   font-size: 1.5em;
  }
 
- /*-----FAQs PAge-----*/
+ /*-----FAQ PAge-----*/
 
- .faqs .content-wrapper {
+ .faq .content-wrapper {
   justify-content: space-between;
  }
 
- .faqs-content {
+ .faq-content {
   flex-basis: 45%;
  }
 
- .faqs h2 {
+ /* *** Added h1 for the faq page */
+  .faq h1, .faq h2 {
   width: 100%;
-  
  }
 
- .faqs h4, .faqs p {
+ /* *** Added h2 for the faq page */
+  .faq h2, .faq h4, .faq p {
   font-size: 0.875em;
   line-height: 1.125;
  }
@@ -711,21 +719,19 @@ input[type=button] {
 
   /* General styles */
   .content-wrapper {
-  max-width: 960px; 
+   max-width: 960px; 
   }  
 
   header {
    padding: 15px 0;
   }
   
-  header figure {
-    width: 30%;
-  }
   h2 {
     font-size: 2.25em;
-   }
+  }
   
-  h3, h4 {
+  /* *** Added h2 for homepage form */
+  .form-description h2, h3, h4 {
     font-size: 1.875em;
   }
 
@@ -739,7 +745,6 @@ input[type=button] {
  .hero-area h1 {
   width: 80%;
   font-size: 3.75em;
-
   }
 
  /*Aside*/
@@ -748,23 +753,23 @@ input[type=button] {
   justify-content: space-around;
  }
 
-aside .content-wrapper .form-description, 
-aside .content-wrapper .form {
-  width: 30%;
+ aside .content-wrapper .form-description, 
+ aside .content-wrapper .form {
+  width: 40%;
  }
 
  .form-description p {
-  font-size: 1.125em;
+   font-size: 1.125em;
  }
 
  /*Features*/
 
  .features h2 {
-  width: 90%;
+   width: 90%;
  }
 
  .features article {
-  flex-basis: 33%;
+   flex-basis: 33%;
  }
 
  /*Reviews*/
@@ -774,10 +779,11 @@ aside .content-wrapper .form {
   }
 
  .reviews article div {
-  width: 41%;
+   width: 41%;
  }
 
- footer h4 {
+ /* *** Added h3 for the footer */
+  footer h3, footer h4 {
     font-size: 1.875em;
   }
 
@@ -787,26 +793,31 @@ aside .content-wrapper .form {
   padding-bottom: 37%;
 }
 
- .mission h2,
+ /* *** Added h1 for the about page */
+  .mission h1, .mission h2,
  .contact-section .content-wrapper h2 {
-  width: 95%;
-  font-size: 3em;
- }
+   width: 95%;
+   font-size: 3em;
+  }
  
- .contact-content h4 {
+ /* *** Added h3 for the about page */
+  .contact-content h3, .contact-content h4 {
     font-size: 1.875em;
   }
 
- /*-----FAQs PAge-----*/
+ /*-----FAQ PAge-----*/
 
- .faqs h2 {
+ /* *** No longer needed since updating header hierarchy */
+ /*.faq h2 {
   width: 100%;
   font-size: 3em;
- }
- .faqs h4, .faqs p {
-  font-size: 1.125em;
-  line-height: 1;
- }
+ } */
+
+ /* *** Added h2 for the faq page */
+  .faq h2, .faq h4, .faq p {
+   font-size: 1.125em;
+   line-height: 1;
+  }
 
 }
 
